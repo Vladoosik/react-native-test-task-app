@@ -1,49 +1,55 @@
-# React Native Developer Test Task for White Digital
+# Test Project – White Digital  
+Author: **Vlad Khrushchov**  
 
-## Overview
+This repository contains a **test assignment** for **White Digital**.  
 
-This test is to evaluate:
-- **Layout Skills:** How you create and style layouts in React Native.
-- **API Integration:** How you connect and interact with API endpoints.
-- **Git Workflow:** How you work with Git, including the amount and quality of your commits, and the clarity of your commit messages.
-- **Code Quality:** Your ability to write clean, maintainable, and well-structured code following best practices.
+---
 
-### Tasks:
-1. Create layouts for two screens as specified in the provided Figma design.
-2. Connect the application to API.
-3. Utilize React Native Navigator.
-4. Use Tailwind for styling.
-5. Use Tanstack Query for data fetching and state management.
-6. Generate hooks for Tanstack Query + API from the provided OpenAPI specification.
-7. Use environment variables for configuration.
+## 🚀 Tech Stack
+- [React Native CLI 0.74.3](https://reactnative.dev/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [Zustand](https://github.com/pmndrs/zustand) — state management  
+- [react-native-mmkv](https://github.com/mrousavy/react-native-mmkv) — fast key-value storage  
 
-### Result
-- Created PR to main branch in forked repo.
-- Recording for iOS and Android, showcasing both large and small screen sizes.
+There is no backend, but the project uses a public endpoint:  
+👉 [API Docs](https://test-task-server-production-3257.up.railway.app/openApi)  
 
-### Setup
-1. Fork Repository and clone repo.
-2. Install Dependencies.
-   ```bash
-   yarn bootstrap
-   ```
-3. Do all the tasks.
-4. Create PR to main and send the link to it back for review.
-5. Screen recordings can be provided any way.
+---
 
+## ⚙️ Installation & Setup
 
-### Acceptance Criteria
-- Two fully implemented screens as per the Figma design.
-- Integration with the provided API endpoints.
-- Navigation setup between screens.
-- Styled components using Tailwind.
-- Data fetching using Tanstack Query.
-- Generated hooks from the OpenAPI specification.
-- Environment variables configuration.
-- Recorded videos of the application running on both iOS and Android for large and small screens.
+### 1. Install dependencies
+```sh
+yarn install
+cd ios && pod install && cd ..
+```
 
-### Resources
-- [Figma Design Link](https://www.figma.com/design/eMcgoiZbYd1PH5FioYfeQt/Test-Task-React-Native-Developer-WD?node-id=1-138&t=Aovesqj5WVWzlIZo-1)
-- [API Base URL](https://test-task-server-production-3257.up.railway.app/openApi)
+### 2. Run the project
+```sh
+yarn ios      # Run on iOS
+yarn android  # Run on Android
+yarn start    # Start Metro Bundler
+```
 
-If you have any questions or need further clarification, feel free to reach out.
+---
+
+## 🔑 Configuration
+The project uses an `.env` file.  
+⚠️ Note: `.env` **is not included in `.gitignore`** on purpose, to simplify the review of this test project.  
+
+---
+
+## 📂 Project Structure
+The project follows a **classic React Native CLI structure**:  
+```
+src/
+  components/
+  screens/
+  store/
+```
+
+---
+
+## 📌 Notes
+- Since this is a **React Native CLI project**, running `pod install` is required for iOS.  
+- No CI/CD or testing setup is included, as this is a test project.  
