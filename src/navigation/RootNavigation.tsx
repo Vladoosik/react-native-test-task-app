@@ -1,7 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack'
-import { ActivityDetailsScreen, HomeScreen } from '@screens'
 import { ScreenNames } from '@constants'
 import type { RootStackParamList } from '@types'
+import { ActivityDetailsScreen, HomeScreen } from '@features'
+import { ButtonIcon } from '@shared'
 
 const Stack = createStackNavigator<RootStackParamList>()
 
@@ -16,7 +17,11 @@ const RootNavigation = () => {
       <Stack.Screen
         name={ScreenNames.ACTIVITY_DETAILS}
         component={ActivityDetailsScreen}
-        options={{ headerShown: false }}
+        options={({ navigation }) => ({
+          headerTransparent: true,
+          headerTitle: '',
+          headerLeft: () => <ButtonIcon onPress={navigation.goBack} />,
+        })}
       />
     </Stack.Navigator>
   )

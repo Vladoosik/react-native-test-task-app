@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/screens/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/features/**/*.{js,ts,jsx,tsx}',
+    './src/shared/components/*.{js,ts,jsx,tsx}',
   ],
   presets: [require('nativewind/preset')],
   theme: {
@@ -23,11 +23,11 @@ module.exports = {
         abel: ['Abel-Regular'],
       },
       screens: {
-        'xs': '320px',
-        'sm': '375px',
-        'md': '414px',
-        'lg': '768px',
-        'xl': '1024px',
+        xs: '320px',
+        sm: '375px',
+        md: '414px',
+        lg: '768px',
+        xl: '1024px',
       },
     },
   },

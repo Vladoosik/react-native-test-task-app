@@ -9,12 +9,6 @@
     "noUnusedParameters": true,
     "baseUrl": "src",
     "paths": {
-      "@screens/*": [
-        "screens/*"
-      ],
-      "@screens": [
-        "screens/index"
-      ],
       "@assets/*": [
         "assets/*"
       ],
@@ -31,10 +25,10 @@
         "navigation/*"
       ],
       "@api/*": [
-        "api/*"
+        "shared/api/*"
       ],
       "@api": [
-        "api/index"
+        "shared/api/index"
       ],
       "@types/*": [
         "types/*"
@@ -42,35 +36,32 @@
       "@types": [
         "types/index"
       ],
-      "@components/*": [
-        "components/*"
-      ],
       "@constants/*": [
         "constants/*"
       ],
       "@constants": [
         "constants/index"
       ],
-      "@components": [
-        "components/index"
-      ],
-      "@utils/*": [
-        "utils/*"
-      ],
-      "@utils": [
-        "utils/index"
-      ],
-      "@store/*": [
-        "store/*"
-      ],
-      "@store": [
-        "store/index"
-      ],
       "@lib/*": [
         "lib/*"
       ],
       "@lib": [
         "lib/index"
+      ],
+      "@shared": [
+        "shared/index"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@entities/*": [
+        "entities/*"
+      ],
+      "@features": [
+        "features/index"
+      ],
+      "@features/*": [
+        "features/*"
       ]
     }
   },
